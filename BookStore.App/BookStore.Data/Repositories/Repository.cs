@@ -10,7 +10,7 @@ namespace BookStore.Data.Repositories
 {
     public class Repository<T> : IRepository<T> where T : BaseModel
     {
-        private readonly List<T> _items=new List<T>();
+        private readonly static List<T> _items=new List<T>();
         public async Task AddAsync(T model)
         {
             _items.Add(model);

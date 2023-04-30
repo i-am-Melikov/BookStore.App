@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BookStore.Data.Repositories.BookWriters
 {
-    public class RestaurantRepositories:Repository<BookWriter>,IBookWriterRepository
+    public class BookWriterRepository:Repository<BookWriter>,IBookWriterRepository
     {
     }
 }

@@ -20,9 +20,12 @@ namespace BookStore.Core.Models
             Name= name;
             SureName = sureName;
             Age = age;
-            Books = new List<Book>();
             
             CreatedDate = DateTime.UtcNow.AddHours(4);
+        }
+        public override string ToString()
+        {
+            return $"Name:{Name},   Surename:{SureName},   Age:{Age},    Books:{Books},    Created Date:{CreatedDate},    Updated Date:{UpdatedDate}";
         }
     }
 }
