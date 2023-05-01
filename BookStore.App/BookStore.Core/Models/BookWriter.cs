@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace BookStore.Core.Models
 {
@@ -20,7 +21,7 @@ namespace BookStore.Core.Models
             Name= name;
             SureName = sureName;
             Age = age;
-            
+            Books=new List<Book>();
             CreatedDate = DateTime.UtcNow.AddHours(4);
         }
         public override string ToString()
